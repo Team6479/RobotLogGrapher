@@ -1,0 +1,29 @@
+environment:
+  matrix:
+    - PYTHON: "C:\\Python36"
+      PYTHON_VERSION: "3.6.4"
+      PYTHON_ARCH: "64"
+
+platform:
+  - x64
+
+install:
+  - pip install --user matplotlib pyinstaller
+
+build_script:
+  - pyinstaller -F graph_log.py
+
+artifacts:
+- path: dist\*.exe
+
+deploy:
+  provider: GitHub
+  description: ''
+  auth_token:
+      secure: Mh1niqBFOJEevryanZ3PADiWNrujCVz+yCIZAvNel5VdsYIcEDaAA2zurbXUOLNr
+  artifact: /.*\.exe/           # upload all exe packages to release assets
+  draft: true
+  prerelease: true
+  on:
+    branch: master                # release from master branch only
+    appveyor_repo_tag: true       # deploy on tag push only
