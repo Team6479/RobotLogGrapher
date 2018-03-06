@@ -1,9 +1,13 @@
 language: python
+
 python:
-- '3.6'
+  - '3.6'
+
 install:
-- pip install --user matplotlib pyinstaller
+  - pip install --user matplotlib pyinstaller
+
 script: pyinstaller -F graph_log.py
+
 deploy:
   provider: releases
   api_key:
@@ -11,4 +15,4 @@ deploy:
   file: dist/graph_log*
   on:
     repo: Team6479/RobotLogGrapher
-tags: true
+    tags: true
