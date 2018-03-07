@@ -1,0 +1,9 @@
+00000010:LeftSpeed=+1.00,RightSpeed=+1.00,WinchLocked=T
+00000020:LeftSpeed=-1.00,RightSpeed=-1.00,WinchLocked=F
+00000030:LeftSpeed=-0.50,RightSpeed=+0.50,WinchLocked=F
+2018-03-05 20:07:28,137 appJar:INFO: [1508/setLogFile]: Switched to logFile: test_log
+2018-03-05 20:07:38,532 appJar:INFO: [Line 45->1979/stop]: --- GUI stopped ---
+2018-03-05 20:07:52,787 appJar:INFO: [1508/setLogFile]: Switched to logFile: test_log
+2018-03-05 20:08:03,460 appJar:INFO: [Line 45->1979/stop]: --- GUI stopped ---
+2018-03-05 20:08:07,416 appJar:INFO: [1508/setLogFile]: Switched to logFile: test_log
+2018-03-05 20:08:13,266 appJar:INFO: [Line 45->1979/stop]: --- GUI stopped ---
