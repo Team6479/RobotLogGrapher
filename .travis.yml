@@ -4,9 +4,9 @@ python:
   - '3.6'
 
 install:
-  - pip install matplotlib pyinstaller
+  - pip install pygtk matplotlib pyinstaller
 
-script: pyinstaller -F pygtk graph_log.py
+script: pyinstaller -F graph_log.py
 
 deploy:
   provider: releases
