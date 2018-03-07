@@ -3,17 +3,10 @@ language: python
 python:
   - '3.6'
 
-matrix:
-  include:
-      - os: linux
-        python: 3.6
-      - os: osx
-        language: generic
-
 install:
   - pip install matplotlib pyinstaller
 
-script: pyinstaller -F graph_log.py
+script: pyinstaller -F pygtk graph_log.py
 
 deploy:
   provider: releases
