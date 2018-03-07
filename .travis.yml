@@ -3,6 +3,10 @@ language: python
 python:
   - '3.6'
 
+os:
+  - linux
+  - osx
+
 install:
   - pip install matplotlib pyinstaller
 
