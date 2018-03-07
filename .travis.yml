@@ -12,7 +12,9 @@ deploy:
   provider: releases
   api_key:
     secure: AMy0c+9DYQzquZ1MvvhJFCAjcKf3ne+PTrvDI6a9+MXlczRGJMLT6lB3+AKHJuDmUZthFjdu59VDcdNyls/FL8pFiokzIyDBJVCA9nU+grOgu8PwGRXtaiwTSpTuyE5r6v0tv0lWeruJf2YMo1SQEQuS/zyFqU0p9MuNA6urfJ5Rt5Cvx9hvvBXFnp5pdkmnFruD5T3zASE9NkzhI1n03JHvt872o0buXxtjDwp2YbnZvpsRZurXoTKuikKyxKFQR1S9Coi2M0DoOvpZOJQ+Vv6tJDXldYsC1tQ/ZdUm26y8fM0zyd3x+VL4WqW8XId4bsbxvS7Ea+3yvSiQr+PF1Pu4WJ4HUpycOUbHtW+5oj0mAlPpw4nyTWnmuL/3xwdvGpi2Bq319gLEIYG7PwcCXbSMd+8E611yBWBw1Y2Vb5SfzVbYR9XWxwn+wWo0ie06XudlI4Rn8ITZeh4eCu19d6q8bdJcQ9mj44AQV9XZOfqBR+6okc+vuhh9OWmKyjjWfzgpqRvRDfkNUYOa2iAx2nPlOBt0bKAARFj1uRnih4PxW4isuYW9d50x7Um3yZZgQV0ujPh7MQZb62C8v+pKRvNHPZLASMOM1hUGkr5taUALMSuiLtXudEfCCPMun6WVyMmytwPJM/E6W99yRJw0TYnAlDw/cfD0Mllvp6f9XfY=
+  file_glob: true
   file: dist/graph_log*
+  skip_cleanup: true
   on:
     repo: Team6479/RobotLogGrapher
     tags: true

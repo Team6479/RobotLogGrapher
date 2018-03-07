@@ -20,7 +20,7 @@ deploy:
   provider: GitHub
   description: ''
   auth_token:
-      secure: Mh1niqBFOJEevryanZ3PADiWNrujCVz+yCIZAvNel5VdsYIcEDaAA2zurbXUOLNr
+    secure: Y92XdDsTIip2U7tAf4X+z6v/nBlRmWO7z4NpitWVehVQ97MdK4Ys7G93YOhhCKsP 
   artifact: /.*\.exe/           # upload all exe packages to release assets
   draft: true
   prerelease: true
