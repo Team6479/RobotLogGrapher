@@ -4,7 +4,7 @@ python:
   - '3.6'
 
 install:
-  - pip install pygtk matplotlib pyinstaller
+  - pip install matplotlib pyinstaller
 
 script: pyinstaller -F graph_log.py
 
